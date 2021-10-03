@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --regular: 400;
+    --semibold: 600;
+    --bold: 700;
+    --active: #FF8C8C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ffffff21; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ff8c8c; 
+    border-radius: 5px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fd8080; 
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/617967/pexels-photo-617967.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-position: 50% 60%;
+    padding-top: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container > .container__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 6%;
+    position: relative;
+    z-index: 2;
+}
+
+.nav__logo {
+    font-size: 42px;
+    font-weight: var(--bold);
+}
+
+.nav__ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 38%;
+    list-style: none;
+}
+
+.ul__li {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.ul__li:hover {
+    color: #FF8C8C;
+}
+
+.active {
+    font-weight: var(--bold);
+    color: var(--active);
+}
+
+.container__banner {
+    position: absolute;
+    top: 0;
+    left: 45px;
+    height: 100%;
+    width: 19%;
+    background: rgba(255, 106, 106, 0.6);
+}
+
+.container__header {
+    position: absolute;
+    top: 29%;
+    left: 30.9%;
+}
+
+.header__h4 {
+    font-weight: var(--semibold);
+    font-size: 33px;
+    color: #E3E3E3;
+    letter-spacing: 23px;
+    text-transform: uppercase;
+}
+
+.header__h1 {
+    font-size: 90px;
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+
+.header__pContainer {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 120px;
+    width: 70%;
+    padding-right: 50px;
+}
+
+.header__p {
+    font-size: 24px;
+    font-weight: var(--regular);
+    color: #F5F5F5;
+}
+
+.header__button {
+    background: #FF6A6A;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    padding-right: 35px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-weight: var(--bold);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header__button > svg {
+    margin: 0 35px;
+}
